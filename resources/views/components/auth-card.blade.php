@@ -8,7 +8,17 @@
             {{ $slot }}
         </div>
     </div>
-    <div class="w w-2/3 bg-black min-h-screen">
+    @php
+        if ( Request::is('login') ) {
+            $image_url = asset('backend/images/login-bg.jpg');
+        } elseif ( Request::is('register') ) {
+            $image_url = asset('backend/images/register-bg.jpg');
+        } else {
+            $image_url = '';
+        }
+    @endphp
 
+    <div class="w-2/3 bg-black min-h-screen " style="background-image: url('{{ $image_url }}')">
+        <p class="text-white">First Work advocacy week kicks off on <br> Monday! Get your tickets to Amplify 2022.</p>
     </div>
 </div>
