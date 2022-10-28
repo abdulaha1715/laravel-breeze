@@ -13,6 +13,8 @@
             $image_url = asset('backend/images/login-bg.jpg');
         } elseif ( Request::is('register') ) {
             $image_url = asset('backend/images/register-bg.jpg');
+        } elseif ( Request::is('forgot-password') ) {
+            $image_url = asset('backend/images/password-bg.jpg');
         } else {
             $image_url = '';
         }
