@@ -1,5 +1,5 @@
 <div class="flex">
-    <div class="min-h-screen w-1/3 ">
+    <div class="min-h-screen w-1/3 px-8">
         <div class="w-60 m-auto mt-24">
             {{ $logo }}
         </div>

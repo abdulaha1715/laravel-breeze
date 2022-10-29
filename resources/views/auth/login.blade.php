@@ -7,8 +7,8 @@
         </x-slot>
 
         <div class="text-center">
-            <h2>Welcome back</h2>
-            <p>Continue with the email address you use to sign in</p>
+            <h2 class="text-2xl font-bold">Welcome back</h2>
+            <p class="pb-2 text-sm">Continue with the email address you use to sign in</p>
         </div>
 
         <!-- Session Status -->
@@ -43,7 +43,7 @@
 
                 @if (Route::has('password.request'))
                     <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
-                        {{ __('Forgot your password?') }}
+                        {{ __('Forgot Password') }}
                     </a>
                 @endif
             </div>
