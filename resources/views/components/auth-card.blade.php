@@ -1,6 +1,6 @@
 <div class="flex">
     <div class="min-h-screen w-1/3 ">
-        <div>
+        <div class="w-60 m-auto mt-24">
             {{ $logo }}
         </div>
 
@@ -20,7 +20,8 @@
         }
     @endphp
 
-    <div class="w-2/3 bg-black min-h-screen " style="background-image: url('{{ $image_url }}')">
-        <p class="text-white">First Work advocacy week kicks off on <br> Monday! Get your tickets to Amplify 2022.</p>
+    <div class="relative w-2/3 bg-black min-h-screen bg-no-repeat bg-cover h-full z-10" style="background-image: url('{{ $image_url }}')">
+        <div class="absolute top-0 right-0 bottom-0 left-0 bg-black opacity-50"></div>
+        <p class="text-white absolute bottom-40 left-16 z-20">First Work advocacy week kicks off on <br> Monday! Get your tickets to Amplify 2022.</p>
     </div>
 </div>
