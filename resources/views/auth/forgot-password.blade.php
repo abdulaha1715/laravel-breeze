@@ -6,8 +6,9 @@
             </a>
         </x-slot>
 
-        <div class="mb-4 text-sm text-gray-600">
-            {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+        <div class="text-center">
+            <h2 class="text-2xl font-extrabold">Forgot Password</h2>
+            <p class="pb-2 text-sm">Enter your email reset your password.</p>
         </div>
 
         <!-- Session Status -->
@@ -18,17 +19,19 @@
 
             <!-- Email Address -->
             <div>
-                <x-input-label for="email" :value="__('Email')" />
-
-                <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
+                <x-text-input id="email" placeholder="Email Address" class="auth_input" type="email" name="email" :value="old('email')" required autofocus />
 
                 <x-input-error :messages="$errors->get('email')" class="mt-2" />
             </div>
 
             <div class="flex items-center justify-end mt-4">
-                <x-primary-button>
-                    {{ __('Email Password Reset Link') }}
+                <x-primary-button class="w-full block text-center auth_btn hover:bg-orange-600">
+                    {{ __('Submit') }}
                 </x-primary-button>
+            </div>
+
+            <div class="mt-2 text-center">
+                <span class="text-sm center">Don't have an account? <a href="{{ route('register') }}" class="primary_color font-semibold">Sign up for free</a></span>
             </div>
         </form>
     </x-auth-card>

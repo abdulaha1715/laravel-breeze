@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom css Class */
+.btn {
+    @apply text-white font-semibold text-base px-5 py-2 mx-2 rounded-md;
+}
+
+.auth_btn {
+    @apply text-white normal_color_btn font-bold text-base px-5 py-4 rounded-md;
+}
+
+.normal_color_btn {
+    @apply bg-orange-500;
+}
+
+.primary_bg_color {
+    @apply bg-orange-600;
+}
+
+.primary_color {
+    @apply text-orange-600;
+}
+
+.secondary_bg_color {
+    @apply bg-gray-700;
+}
+
+.link_color {
+    @apply text-blue-600;
+}
+
+.auth_input {
+    @apply block mt-1 w-full appearance-none border border-slate-200 shadow-none rounded py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:border-slate-200 focus:border-transparent focus:ring-0;
+}
+
